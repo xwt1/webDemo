@@ -11,4 +11,3 @@ var (
 	ServerSetting *setting.ServerSettingS
 	DBEngine *gorm.DB
 )
-

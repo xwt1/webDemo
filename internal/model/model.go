@@ -6,6 +6,7 @@ import (
 	"webDemo/pkg/setting"
 
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 func NewDBEngine(databaseSetting *setting.DatabaseSettingS) (*gorm.DB, error) {
@@ -27,4 +28,4 @@ func NewDBEngine(databaseSetting *setting.DatabaseSettingS) (*gorm.DB, error) {
 	db.DB().SetMaxIdleConns(databaseSetting.MaxIdleConns)
 	db.DB().SetMaxOpenConns(databaseSetting.MaxOpenConns)
 	return db, nil
-}	
+}

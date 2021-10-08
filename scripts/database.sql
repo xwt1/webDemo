@@ -8,7 +8,7 @@
 -- `
 
 CREATE TABLE `user` (
-  `id` int(10) unsigned NOT NULL,
+  `id` int(10) unsigned DEFAULT 0,
   `name` varchar(100) DEFAULT '' COMMENT '用户姓名',
   `password` varchar(100) DEFAULT '' COMMENT '用户密码',
   `privilege` int DEFAULT 0 COMMENT '特权级，1管理员，0普通用户',

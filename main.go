@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 	"webDemo/global"
@@ -33,7 +32,7 @@ func main() {
 		WriteTimeout:   global.ServerSetting.WriteTimeout,
 		MaxHeaderBytes: 1 << 20,
 	}
-	fmt.Printf("database[%v]\n server[%v]", global.DatabaseSetting, global.ServerSetting)
+	//fmt.Printf("database[%v]\n server[%v]", global.DatabaseSetting, global.ServerSetting)
 	s.ListenAndServe()
 }
 
